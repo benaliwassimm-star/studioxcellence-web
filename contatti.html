@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti — Studio Xcellence</title>
+  <meta name="description" content="Prenota una consulenza o candidati al network di Studio Xcellence.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="contatti">
+  <div class="grain"></div>
+  <div data-include="partials/header.html"></div>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="breadcrumb">Studio Xcellence — Contatti</span>
+        <h1>Parliamone<br><em>insieme</em></h1>
+        <p class="section-lead" style="margin-top:22px;">Fissiamo due ore per un check-up iniziale: le mostriamo esattamente dove il suo studio sta perdendo marginalità. Oppure scriva se vuole entrare nel nostro Dental Professional Network.</p>
+      </div>
+    </section>
+
+    <section class="pad-section-sm on-light">
+      <div class="container">
+        <div class="contact-wrap">
+
+          <!-- INFO -->
+          <div class="reveal">
+            <span class="eyebrow">Informazioni</span>
+            <h2 class="section-title" style="font-size: 32px;">I nostri <em>recapiti</em></h2>
+
+            <div class="contact-info-item">
+              <div class="ic">@</div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:info@studioxcellence.it">info@studioxcellence.it</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ic">T</div>
+              <div>
+                <h4>Telefono</h4>
+                <a href="tel:+390000000000">+39 000 000 0000</a>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="ic">S</div>
+              <div>
+                <h4>Sede</h4>
+                <p>Via dell'Eccellenza 1, 00000 — Città (IT)<br><span style="opacity:.5; font-size:12.5px;">[indirizzo segnaposto]</span></p>
+              </div>
+            </div>
+
+            <div class="social-row">
+              <a href="#" aria-label="Facebook">FB</a>
+              <a href="#" aria-label="Instagram">IG</a>
+              <a href="#" aria-label="LinkedIn">IN</a>
+            </div>
+
+            <div class="hero-visual" style="aspect-ratio: 16/10; margin-top: 40px;">
+              <img src="assets/images/placeholder-wide-1.svg" alt="Mappa / sede Studio Xcellence">
+              <div class="hero-badge" style="left:auto; right:24px;">
+                <strong>HUB</strong>
+                <span>Il polo fisico e digitale di Studio Xcellence</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- FORM -->
+          <div class="reveal">
+            <span class="eyebrow">Scrivici</span>
+            <h2 class="section-title" style="font-size: 32px;">Richiedi<br>una <em>consulenza</em></h2>
+
+            <form id="contactForm" novalidate>
+              <div class="grid grid-2" style="gap: 20px;">
+                <div class="form-field">
+                  <label for="nome">Nome e cognome</label>
+                  <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+              </div>
+              <div class="grid grid-2" style="gap: 20px;">
+                <div class="form-field">
+                  <label for="telefono">Telefono</label>
+                  <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="form-field">
+                  <label for="richiesta">Tipo di richiesta</label>
+                  <select id="richiesta" name="richiesta">
+                    <option>Richiedi il check-up iniziale</option>
+                    <option>Diventa professionista partner</option>
+                    <option>Informazioni sull'Academy</option>
+                    <option>Altro</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="messaggio">Messaggio</label>
+                <textarea id="messaggio" name="messaggio" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark">Invia richiesta</button>
+              <p class="form-note">Rispondiamo entro 24-48 ore lavorative.</p>
+              <div class="form-success" id="formSuccess">Grazie! Il messaggio è stato preparato correttamente — <em>(form non ancora collegato a un backend: vedi README per attivarlo).</em></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div data-include="partials/footer.html"></div>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
