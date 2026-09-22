@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+  <!-- Foto segnaposto membro del team. Sostituisci con la foto reale. -->
+  <rect width="400" height="500" fill="#E4DBC6"/>
+  <circle cx="200" cy="195" r="80" fill="#8C806E" opacity="0.55"/>
+  <path d="M60 480 C60 360 130 300 200 300 C270 300 340 360 340 480 Z" fill="#8C806E" opacity="0.55"/>
+</svg>

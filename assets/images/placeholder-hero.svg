@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice">
+  <!-- Immagine segnaposto per l'hero: sostituiscila con una foto reale dello studio/team -->
+  <rect width="400" height="500" fill="#F1ECDD"/>
+  <ellipse cx="320" cy="80" rx="180" ry="140" fill="#E4DBC6"/>
+  <ellipse cx="60" cy="460" rx="160" ry="120" fill="#DCD1B8" opacity="0.6"/>
+  <g stroke="#8C806E" stroke-width="1.2" opacity="0.5" fill="none">
+    <circle cx="200" cy="250" r="120"/>
+    <circle cx="200" cy="250" r="88"/>
+    <line x1="200" y1="130" x2="200" y2="370"/>
+    <line x1="80" y1="250" x2="320" y2="250"/>
+  </g>
+  <circle cx="200" cy="250" r="9" fill="#8C806E"/>
+</svg>

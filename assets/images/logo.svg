@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Segnaposto del marchio Studio Xcellence: sostituisci questo file con il logo reale (SVG o PNG) -->
+  <path d="M32 4 L54 24 L42 40 L32 60 L22 40 L10 24 Z" stroke="#8C806E" stroke-width="2.5" fill="none"/>
+  <path d="M32 4 L54 24 L44 26 Z" fill="#8C806E"/>
+  <path d="M22 40 L32 24 L44 26 L32 60 Z" fill="none" stroke="#8C806E" stroke-width="2.5"/>
+</svg>
