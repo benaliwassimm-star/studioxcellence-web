@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area Riservata — Studio Xcellence</title>
+  <meta name="description" content="Accedi alla tua area riservata Studio Xcellence: professionisti e studi odontoiatrici partner.">
+  <link rel="icon" type="image/webp" href="assets/images/logo.webp">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="area-riservata">
+  <div class="grain"></div>
+  <div data-include="partials/header.html"></div>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="breadcrumb">Studio Xcellence — Area Riservata</span>
+        <h1>La tua area <em>riservata</em></h1>
+        <p class="section-lead" style="margin-top:22px;">Un unico accesso per professionisti e studi. Ti chiediamo chi sei nel primo passo della creazione del profilo.</p>
+      </div>
+    </section>
+
+    <section class="pad-section-sm">
+      <div class="container">
+
+        <!-- INGRESSO -->
+        <div id="ar-entry">
+          <div class="card ar-narrow">
+            <h2 class="section-title" style="font-size:26px;">Accedi o registrati</h2>
+            <p style="opacity:.75; margin-top:10px;">Professionisti (ASO, Odontoiatri, Igienisti) e studi odontoiatrici partner.</p>
+            <button class="btn btn-primary" id="btnGoLogin" type="button">Continua</button>
+          </div>
+          <p class="ar-note">Fai parte del team Xcellence? <a href="area-team.html">Accesso team Xcellence</a></p>
+        </div>
+
+        <!-- LOGIN (finto) -->
+        <div id="ar-login" hidden>
+          <div class="card ar-narrow">
+            <h2 class="section-title" style="font-size:26px;">Accedi all'Area Riservata</h2>
+            <p style="opacity:.7; font-size:14px; margin-top:8px; margin-bottom:26px;">Prototipo: qualsiasi valore ti fa entrare, per ora.</p>
+            <div class="form-field"><label for="li-email">Email</label><input type="email" id="li-email" value="prova@xcellence.it"></div>
+            <div class="form-field"><label for="li-pass">Password</label><input type="password" id="li-pass" value="prototipo"></div>
+            <button class="btn btn-primary" id="btnLogin" type="button">Accedi</button>
+          </div>
+        </div>
+
+        <!-- CHI SEI (primo passo del profilo) -->
+        <div id="ar-role" hidden>
+          <span class="eyebrow" style="justify-content:center; display:flex;">Passo 1 di 2</span>
+          <h2 class="section-title text-center">Prima di tutto, <em>chi sei?</em></h2>
+          <p class="section-lead text-center mx-auto" style="margin-bottom:44px;">In base alla risposta ti mostriamo le domande giuste per completare il profilo.</p>
+          <div class="grid grid-2">
+            <button class="card role-pick" type="button" data-role="pro">
+              <span class="card-icon">P</span>
+              <h3>Sono un Professionista</h3>
+              <p>ASO, Odontoiatra o Igienista. Carica i tuoi documenti, le specializzazioni e la disponibilità.</p>
+            </button>
+            <button class="card role-pick" type="button" data-role="studio">
+              <span class="card-icon">S</span>
+              <h3>Sono uno Studio</h3>
+              <p>Crea una richiesta con le caratteristiche cercate e ricevi la classifica dei professionisti compatibili (Xscore).</p>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div data-include="partials/footer.html"></div>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/area-riservata.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area Professionista — Studio Xcellence</title>
+  <meta name="description" content="Gestisci il tuo profilo, i documenti e la disponibilità nel pool professionale di Studio Xcellence.">
+  <link rel="icon" type="image/webp" href="assets/images/logo.webp">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="area-riservata">
+  <div class="grain"></div>
+  <div data-include="partials/header.html"></div>
+
+  <main>
+    <section class="pad-section-sm">
+      <div class="container">
+
+        <div class="dash-head">
+          <div class="who">
+            <span class="avatar">MB</span>
+            <div><h1>Ciao, Dott. Marco Bellini</h1><span class="role-tag">Area Professionista</span></div>
+          </div>
+          <div class="dash-links">
+            <a href="#" id="linkMyProfile" class="exit-link">Il mio profilo</a>
+            <a href="area-riservata.html" class="exit-link" data-transition-link>Esci</a>
+          </div>
+        </div>
+
+        <!-- VISTA PRINCIPALE: solo richieste + disponibilità, quello che si consulta spesso -->
+        <div id="pro-home">
+          <div class="ar-cols">
+            <div>
+              <div class="ar-panel">
+                <h2>Disponibilità</h2>
+                <div class="avail-table" id="availTable"></div>
+                <div class="avail-legend"><i></i> Fascia disponibile — clicca per attivarla/disattivarla</div>
+              </div>
+            </div>
+            <div>
+              <div class="ar-panel">
+                <h2>Le tue richieste</h2>
+                <div id="proRequests"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- IL MIO PROFILO: dati inseriti in registrazione, consultabili solo su richiesta -->
+        <div id="pro-profile" hidden>
+          <a href="#" id="linkBackHome" class="exit-link" style="display:inline-block; margin-bottom:24px;">&larr; Torna alle tue richieste</a>
+          <div class="ar-cols">
+            <div>
+              <div class="ar-panel">
+                <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:20px;">
+                  <h2 style="margin:0;">Il tuo profilo</h2>
+                  <span class="pill" id="certPill"></span>
+                </div>
+
+                <div class="form-field">
+                  <label for="pro-ruolo">Ruolo</label>
+                  <select id="pro-ruolo">
+                    <option value="Medico">Medico Odontoiatra</option>
+                    <option value="ASO">ASO</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label id="pro-spec-label">Specializzazioni</label>
+                  <div class="chips" id="pro-spec-chips"></div>
+                </div>
+                <div class="row2">
+                  <div class="form-field"><label for="pro-esp">Anni di esperienza</label><input type="number" id="pro-esp" min="0"></div>
+                  <div class="form-field"><label for="pro-zona">Zona / città</label><input type="text" id="pro-zona"></div>
+                </div>
+                <div class="row2">
+                  <div class="form-field"><label for="pro-km">Raggio spostamento accettato (km)</label><input type="number" id="pro-km" min="0"></div>
+                  <div class="form-field"><label for="pro-tariffa">Tariffa giornaliera richiesta (€)</label><input type="number" id="pro-tariffa" min="0"></div>
+                </div>
+                <div class="form-field">
+                  <label>Tipologia di disponibilità</label>
+                  <div class="chips" id="pro-tipo-chips"></div>
+                </div>
+                <button class="btn btn-primary btn-sm" id="btnSaveProfile" type="button" style="margin-top:10px;">Salva profilo</button>
+                <p class="toast" id="toastProfile">✓ Profilo salvato</p>
+              </div>
+            </div>
+
+            <div>
+              <div class="ar-panel">
+                <h2>Documenti</h2>
+                <div class="upload-row">
+                  <div class="u-label">CV / curriculum<small>Formazione ed esperienza</small></div>
+                  <label class="upload-status empty" data-slot="cv"><span class="txt">Nessun file</span><input class="file-input" type="file" data-slot="cv"></label>
+                </div>
+                <div class="upload-row">
+                  <div class="u-label">Certificazioni e iscrizione Albo<small>Attestato/qualifica + numero Albo</small></div>
+                  <label class="upload-status empty" data-slot="albo"><span class="txt">Nessun file</span><input class="file-input" type="file" data-slot="albo"></label>
+                </div>
+                <div class="upload-row">
+                  <div class="u-label">Assicurazione professionale<small>Copertura RC professionale</small></div>
+                  <label class="upload-status empty" data-slot="assicurazione"><span class="txt">Nessun file</span><input class="file-input" type="file" data-slot="assicurazione"></label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div data-include="partials/footer.html"></div>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/area-riservata.js"></script>
+</body>
+</html>

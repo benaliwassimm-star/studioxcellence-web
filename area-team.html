@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accesso Team — Studio Xcellence</title>
+  <meta name="description" content="Area interna Studio Xcellence.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/webp" href="assets/images/logo.webp">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="area-riservata">
+  <div class="grain"></div>
+  <div data-include="partials/header.html"></div>
+
+  <main>
+    <section class="pad-section-sm">
+      <div class="container">
+
+        <div id="ar-teamLogin">
+          <div class="card ar-narrow">
+            <h2 class="section-title" style="font-size:26px;">Accesso team Xcellence</h2>
+            <p style="opacity:.7; font-size:14px; margin-top:8px; margin-bottom:26px;">Area interna — non è un accesso pubblico. Prototipo: qualsiasi valore ti fa entrare.</p>
+            <div class="form-field"><label for="tl-email">Email</label><input type="email" id="tl-email" value="francesca@xcellence.it"></div>
+            <div class="form-field"><label for="tl-pass">Password</label><input type="password" id="tl-pass" value="prototipo"></div>
+            <button class="btn btn-primary" id="btnTeamLogin" type="button">Accedi</button>
+          </div>
+        </div>
+
+        <div id="ar-teamDash" hidden>
+          <div class="dash-head">
+            <div class="who">
+              <span class="avatar">FX</span>
+              <div><h1>Ciao, Team Xcellence</h1><span class="role-tag">Area Interna</span></div>
+            </div>
+            <a href="area-riservata.html" class="exit-link" data-transition-link>Esci</a>
+          </div>
+
+          <div class="ar-panel">
+            <h2>Professionisti da certificare</h2>
+            <div id="certList"></div>
+          </div>
+
+          <div class="ar-panel">
+            <h2>Richieste in arrivo</h2>
+            <div id="teamRequests"></div>
+          </div>
+
+          <p class="ar-note"><button type="button" id="btnResetDemo">Reimposta dati demo</button></p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div data-include="partials/footer.html"></div>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/area-riservata.js"></script>
+</body>
+</html>

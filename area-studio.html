@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area Studio — Studio Xcellence</title>
+  <meta name="description" content="Cerca il professionista giusto per il tuo studio con lo Xscore di Studio Xcellence.">
+  <link rel="icon" type="image/webp" href="assets/images/logo.webp">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-page="area-riservata">
+  <div class="grain"></div>
+  <div data-include="partials/header.html"></div>
+
+  <main>
+    <section class="pad-section-sm">
+      <div class="container">
+
+        <div class="dash-head">
+          <div class="who">
+            <span class="avatar">SX</span>
+            <div><h1>Ciao, Studio Dentistico Prova</h1><span class="role-tag">Area Studio</span></div>
+          </div>
+          <a href="area-riservata.html" class="exit-link" data-transition-link>Esci</a>
+        </div>
+
+        <div class="ar-panel">
+          <h2>Cerca un professionista</h2>
+          <div class="row2" style="grid-template-columns: 1fr 1fr 1fr; margin-bottom:0;">
+            <div class="form-field">
+              <label for="req-ruolo">Ruolo cercato</label>
+              <select id="req-ruolo">
+                <option value="Medico">Medico Odontoiatra</option>
+                <option value="ASO">ASO</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label id="req-spec-label">Specializzazione richiesta</label>
+              <select id="req-spec"></select>
+            </div>
+            <div class="form-field"><label for="req-esp">Esperienza minima (anni)</label><input type="number" id="req-esp" value="10" min="0"></div>
+          </div>
+          <div class="row2" style="grid-template-columns: 1fr 1fr 1fr;">
+            <div class="form-field">
+              <label for="req-tipo">Tipologia necessità</label>
+              <select id="req-tipo"></select>
+            </div>
+            <div class="form-field"><label for="req-km">Distanza massima accettata (km)</label><input type="number" id="req-km" value="20" min="0"></div>
+            <div class="form-field"><label for="req-budget">Budget giornaliero (€)</label><input type="number" id="req-budget" value="420" min="0"></div>
+          </div>
+          <button class="btn btn-primary" id="btnFind" type="button">Trova professionisti — calcola Xscore</button>
+        </div>
+
+        <div style="display:flex; align-items:baseline; justify-content:space-between; margin:44px 0 20px; flex-wrap:wrap; gap:8px;" id="resHead" hidden>
+          <h2 class="section-title" style="margin:0; font-size:24px;">Classifica compatibilità</h2>
+          <span style="font-size:13px; opacity:.65;" id="resCount"></span>
+        </div>
+        <div id="results"></div>
+
+        <div style="margin:48px 0 20px;">
+          <h2 class="section-title" style="font-size:24px;">Le mie richieste</h2>
+        </div>
+        <div id="studioRequests"></div>
+
+      </div>
+    </section>
+  </main>
+
+  <div data-include="partials/footer.html"></div>
+
+  <!-- MODAL: CONTATTA -->
+  <div class="modal-overlay" id="modalContact" hidden>
+    <div class="modal-box">
+      <h2>Richiedi <span id="modalCandName"></span></h2>
+      <p style="opacity:.7; font-size:15px; margin-bottom:20px;">Per quale data ti serve questo professionista?</p>
+      <div class="form-field">
+        <label>Data richiesta</label>
+        <div class="dpick" id="modalDatePick">
+          <input type="text" class="dpick-input" readonly placeholder="Scegli una data">
+          <div class="dpick-pop" hidden>
+            <div class="dpick-head"><button type="button" class="dpick-prev">&lsaquo;</button><span class="dpick-month"></span><button type="button" class="dpick-next">&rsaquo;</button></div>
+            <div class="dpick-dow"></div>
+            <div class="dpick-grid"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-actions">
+        <button class="btn btn-primary btn-sm" id="modalSend" type="button">Invia richiesta</button>
+        <button class="btn btn-outline btn-sm" id="modalCancel" type="button">Annulla</button>
+      </div>
+      <p class="modal-foot">Fase 1 — la richiesta arriva al team Xcellence, che gestisce la trattativa con il professionista.</p>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/area-riservata.js"></script>
+</body>
+</html>
